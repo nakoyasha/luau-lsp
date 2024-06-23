@@ -96,8 +96,13 @@ They can be investigated at a later time:
 
 ## Build From Source
 
+Compile luau-lsp from scratch by running:
+
 ```sh
 mkdir build && cd build
 cmake .. -DCMAKE_BUILD_TYPE=Release
 cmake --build . --target Luau.LanguageServer.CLI --config Release
 ```
+
+Then, add the build folder to your path (or move it to a folder that is already in the path), this will allow the extension
+to use your self-compiled build of luau-lsp.
