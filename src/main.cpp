@@ -128,7 +128,7 @@ void processFFlags(const argparse::ArgumentParser& program)
     // Manually enforce a LuauTarjanChildLimit increase
     // TODO: re-evaluate the necessity of this change
     if (FInt::LuauTarjanChildLimit > 0 && FInt::LuauTarjanChildLimit < 15000)
-        FInt::LuauTarjanChildLimit.value = 15000;
+        FInt::LuauTarjanChildLimit.value = 2500;
 }
 
 std::filesystem::path file_path_parser(const std::string& value)
